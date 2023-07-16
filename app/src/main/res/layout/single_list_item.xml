@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#BFC7CCCB"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ADD5F7"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <!-- Title, secondary and supporting text -->
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:autoSizeMinTextSize="21sp"
+                    android:textSize="21sp"
+                    android:autoSizeMaxTextSize="21sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    app:autoSizeTextType="uniform"
+                    tools:targetApi="o"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/card_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="19sp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/list_play_btn"
+                    android:drawablePadding="9dp"
+                    android:text="@string/supporting_text"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/list_play_btn"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

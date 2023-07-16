@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/homeTitleCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="15dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <!-- Title -->
+                    <TextView
+                        android:id="@+id/home_card_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/asking_feelings"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:autoSizeTextType="uniform"
+                        app:fontFamily="casual" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="9sp">
+
+
+            <!--Angry card next to Meh-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/homeAngryCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                android:layout_margin="9sp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_anim"
+                    tools:context="com.suad.venttome.HomeFragment">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/backupCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        android:layout_margin="8sp">
+
+                        <Button
+                            android:id="@+id/angry_btn"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:textSize="30sp"
+                            android:clickable="false"
+                            android:background="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            android:text="Record A Mood" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--Empty card next to angry-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/homeEmptyCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="50"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:visibility="invisible"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/graph_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:paddingTop="23dp">
+
+                </com.jjoe64.graphview.GraphView>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:paddingTop="23dp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

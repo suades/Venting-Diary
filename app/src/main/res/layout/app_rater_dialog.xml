@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rate_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:text="Rate Venting Diary!"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="29sp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you have enjoyed using the Venting Diary app we would truly appreciate a good rating from you."
+            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="2dp">
+
+
+            <Button
+                android:id="@+id/rate_yes"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="4dp"
+                android:text="Sure!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform"
+                android:focusable="true"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+
+
+            <Button
+                android:id="@+id/rate_later"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="Later"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform"
+                android:focusable="true"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+
+            <Button
+                android:id="@+id/rate_never"
+                android:layout_width="0dp"
+                android:layout_weight="0.34"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:text="Never"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform"
+                android:focusable="true"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

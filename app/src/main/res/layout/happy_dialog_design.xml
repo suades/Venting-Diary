@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#04D04F"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/happy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:text="@string/happy_title"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/happy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/happy_title"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="@string/elated_text"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"/>
+
+        <Button
+            android:id="@+id/happy_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/happy_text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/recordGoColor"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="7dp"
+            android:text="@string/happy_dialog_button_text"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"
+            app:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

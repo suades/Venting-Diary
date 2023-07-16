@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/recordGoColor" />
+
+    <stroke android:width="2dp">
+        <gradient
+            android:startColor="@android:color/holo_green_light"
+            android:endColor="@android:color/holo_purple"
+            android:type="sweep">
+        </gradient>
+    </stroke>
+</shape>

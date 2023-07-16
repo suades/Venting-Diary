@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <com.hanks.passcodeview.PasscodeView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.81"
+        android:id="@+id/passcode_view"
+        android:background="@color/colorPrimary"
+        app:correctStateColor="@android:color/holo_green_dark"
+        app:wrongStateColor="@android:color/holo_red_dark"
+        app:numberTextColor="@color/colorPrimary"
+        android:autoSizeTextType="uniform"
+        android:layout_marginBottom="-20dp"
+        tools:targetApi="lollipop">
+
+    </com.hanks.passcodeview.PasscodeView>
+
+    <ImageButton
+        android:id="@+id/fingerprint_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:layout_margin="0dp"
+        android:src="?android:attr/fingerprintAuthDrawable"
+        tools:targetApi="n"
+        android:scaleType="fitCenter"
+        android:forceHasOverlappingRendering="true"
+        android:background="@android:color/white"
+        android:tint="@color/colorPrimary"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/paraLabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:text="@string/para_label_text"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"/>
+
+
+</LinearLayout>

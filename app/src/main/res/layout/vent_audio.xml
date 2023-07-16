@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/top_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/backToHomeAudio"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:onClick="MainActivity2"
+            android:src="@drawable/baseline_home_white_36"/>
+
+        <Spinner
+            android:id="@+id/vent_spinner_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:lines="1"
+            android:background="@drawable/spinner_bg"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/text_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_layout"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/input_title_audio"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/inputting_title"
+            android:textColorHint="#FFFFFF"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@id/inputFeelings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/record_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-black"
+        app:autoSizeTextType="uniform"
+        android:lines="1"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/record_btn"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginStart="12dp"
+        android:padding="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+        android:cropToPadding="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_mic_off_black_48"
+        tools:ignore="ContentDescription" />
+
+
+    <Chronometer
+        android:id="@+id/record_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"/>
+
+
+</LinearLayout>

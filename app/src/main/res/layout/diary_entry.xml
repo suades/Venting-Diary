@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/text_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#BFC7CCCB"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="8dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9FF6E9"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <!-- Title, secondary and supporting text -->
+
+                <ImageButton
+                    android:id="@+id/back_to_diary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="9dp"
+                    android:lines="1"
+                    android:onClick="backToTextList"
+                    android:src="@android:drawable/ic_delete" />
+
+                <TextView
+                    android:id="@+id/read_text"
+                    android:layout_width="395dp"
+                    android:layout_height="512dp"
+                    android:clickable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:inputType="none"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/load_diary_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/load_entry"
+                    android:textColor="@android:color/black"
+                    android:focusable="true"
+                    android:onClick="load"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#16193B</color>
+    <color name="colorPrimaryDark">#090B22</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="recordStopColor">#35478C</color>
+    <color name="recordGoColor">#7FB2F0</color>
+    <color name="elatedColor">#EF08C0</color>
+    <color name="happyColor">#04D04F</color>
+    <color name="mehColor">#BC6F09</color>
+    <color name="sadColor">#337FF2</color>
+    <color name="angryColor">#FB0011</color>
+</resources>
